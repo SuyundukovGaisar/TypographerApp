@@ -108,7 +108,7 @@ namespace TypographerApp.Tests
         public void ReplacingExpression_ExpressionReturned()
         {
             //arrange
-            string text = "хахаха";
+            string text = "Хахаха";
             string expected = "=)";
 
             //act
@@ -122,7 +122,7 @@ namespace TypographerApp.Tests
         public void ReplaceWord_WordReturned()
         {
             //arrange
-            string text = "стыд";
+            string text = "Стыд";
             string expected = "кринж";
 
             //act

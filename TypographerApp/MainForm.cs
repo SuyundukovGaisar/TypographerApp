@@ -76,7 +76,7 @@ namespace TypographerApp
         //14 правило
         public string Replacingpoints(string text)
         {
-            return Regex.Replace(text, @"\b([а-яё]\.|[А-ЯЁ]\.)", "$1 ");
+            return Regex.Replace(text, @"\b([а-яё]\.|[А-ЯЁ]\.)", "$1 ", RegexOptions.IgnoreCase);
         }
         //9 правило
         public string ReplacePlusMinus(string text)
@@ -115,11 +115,11 @@ namespace TypographerApp
         }
         public string ReplacingExpression(string text)
         {
-            return Regex.Replace(text, "хахаха", "=)");
+            return Regex.Replace(text, "хахаха", "=)", RegexOptions.IgnoreCase);
         }
         public string ReplaceWord(string text)
         {
-            return Regex.Replace(text, "стыд", "кринж");
+            return Regex.Replace(text, "стыд", "кринж", RegexOptions.IgnoreCase);
         }
         public string LimitPunctuationMarks(string text)
         {
