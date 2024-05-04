@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TypographerApp
 {
@@ -179,6 +180,12 @@ namespace TypographerApp
         private void Deletebutton_Click(object sender, EventArgs e)
         {
             StarttextBox.Clear();
+        }
+
+        private void Copybutton_Click(object sender, EventArgs e)
+        {
+            string textToCopy = ResulttextBox.Text;
+            Clipboard.SetText(textToCopy);
         }
     }
 }

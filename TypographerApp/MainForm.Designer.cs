@@ -33,12 +33,14 @@
             this.Deletebutton = new System.Windows.Forms.Button();
             this.Startlabel = new System.Windows.Forms.Label();
             this.Resultlabel = new System.Windows.Forms.Label();
+            this.Copybutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StarttextBox
             // 
             this.StarttextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.StarttextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StarttextBox.Location = new System.Drawing.Point(13, 42);
             this.StarttextBox.Multiline = true;
             this.StarttextBox.Name = "StarttextBox";
@@ -51,6 +53,7 @@
             this.ResulttextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ResulttextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ResulttextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ResulttextBox.Location = new System.Drawing.Point(430, 42);
             this.ResulttextBox.Multiline = true;
             this.ResulttextBox.Name = "ResulttextBox";
@@ -71,20 +74,32 @@
             // Startlabel
             // 
             this.Startlabel.AutoSize = true;
-            this.Startlabel.Location = new System.Drawing.Point(13, 20);
+            this.Startlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Startlabel.Location = new System.Drawing.Point(12, 16);
             this.Startlabel.Name = "Startlabel";
-            this.Startlabel.Size = new System.Drawing.Size(136, 16);
+            this.Startlabel.Size = new System.Drawing.Size(174, 20);
             this.Startlabel.TabIndex = 3;
             this.Startlabel.Text = "Изначальный текст";
             // 
             // Resultlabel
             // 
             this.Resultlabel.AutoSize = true;
-            this.Resultlabel.Location = new System.Drawing.Point(427, 20);
+            this.Resultlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Resultlabel.Location = new System.Drawing.Point(426, 16);
             this.Resultlabel.Name = "Resultlabel";
-            this.Resultlabel.Size = new System.Drawing.Size(77, 16);
+            this.Resultlabel.Size = new System.Drawing.Size(97, 20);
             this.Resultlabel.TabIndex = 4;
             this.Resultlabel.Text = "Результат";
+            // 
+            // Copybutton
+            // 
+            this.Copybutton.Location = new System.Drawing.Point(709, 12);
+            this.Copybutton.Name = "Copybutton";
+            this.Copybutton.Size = new System.Drawing.Size(112, 24);
+            this.Copybutton.TabIndex = 5;
+            this.Copybutton.Text = "Копировать";
+            this.Copybutton.UseVisualStyleBackColor = true;
+            this.Copybutton.Click += new System.EventHandler(this.Copybutton_Click);
             // 
             // MainForm
             // 
@@ -92,6 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(833, 484);
+            this.Controls.Add(this.Copybutton);
             this.Controls.Add(this.Resultlabel);
             this.Controls.Add(this.Startlabel);
             this.Controls.Add(this.Deletebutton);
@@ -111,6 +127,7 @@
         private System.Windows.Forms.Button Deletebutton;
         private System.Windows.Forms.Label Startlabel;
         private System.Windows.Forms.Label Resultlabel;
+        private System.Windows.Forms.Button Copybutton;
     }
 }
 
